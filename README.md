@@ -2,7 +2,7 @@
 
 Node module for displaying browser stats via http://browsersverige.se from the command line.
 
-![Screenshot](https://dl.dropboxusercontent.com/u/1162759/dump_2014-12-30_09-49-04.png)
+![Screenshot](https://dl.dropboxusercontent.com/u/1162759/dump_2014-12-30_10-05-15.png)
 
 ## Install
 
