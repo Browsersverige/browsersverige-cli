@@ -28,6 +28,10 @@ Copy to clipboard (for pasting into other applications)
 
 	browsersverige -l 3 | pbcopy
 
+### Notes
+
+This is just one way of measuring Browser stats. This is explained [here](http://browsersverige.se/om).
+
 ### Todo
 - [ ] Add argument for filtering by Browser vendor
 - [ ] Add tests
