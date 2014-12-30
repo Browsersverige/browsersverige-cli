@@ -33,6 +33,8 @@ Copy to clipboard (for pasting into other applications)
 - [ ] Add tests
 
 ### Changelog
++ 1.0.1: Added percentage characters in the output
++ 1.0.0: No longer beta
 + 0.0.1: Published
 
 ### License
