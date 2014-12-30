@@ -8,7 +8,7 @@ Node module for displaying browser stats via http://browsersverige.se from the c
 
 Install the module with [npm](http://npmjs.com):
 
-	npm install -g browsersverige
+	npm install -g browsersverige-cli
 
 ## Usage
 
