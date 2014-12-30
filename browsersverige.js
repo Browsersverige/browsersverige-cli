@@ -31,12 +31,12 @@ program
 			if(full) {
 				console.log('\n'+chalk.white.bgBlue(" Browsersverige: ")+'\n');
 				for(var i = 0; i < body.length; i++) {
-					console.log(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market));
+					console.log(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+'%'));
 				}
 			} else {
 				console.log('\n'+chalk.white.bgBlue(" Browsersverige topp "+number+": ")+'\n');
 				for(var i = 0; i < number; i++) {
-					console.log(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market));
+					console.log(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+'%'));
 				}
 			}
 			process.exit(0);
