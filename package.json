@@ -1,6 +1,6 @@
 {
 	"name": "browsersverige-cli",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Display browser stats via http://browsersverige.se",
 	"main": "browsersverige.js",
 	"keywords": [
