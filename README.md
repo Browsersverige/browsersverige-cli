@@ -20,6 +20,10 @@ Display only top 3 browsers
 
 	browsersverige -l 3
 
+Help?
+
+	browsersverige -h
+
 Copy to clipboard (for pasting into other applications)
 
 	browsersverige -l 3 | pbcopy
