@@ -30,5 +30,4 @@ Copy to clipboard (for pasting into other applications)
 + 0.0.1: Published
 
 ### License
-Copyright (c) 2014 Urban Sanden
-Licensed under the MIT license.
+Copyright (c) 2014 Urban Sanden. Licensed under the MIT license.
