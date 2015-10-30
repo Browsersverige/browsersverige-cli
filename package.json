@@ -6,9 +6,13 @@
 	"keywords": [
 		"browsers"
 	],
-	"author": "Urban Sanden",
+	"author": "Urban Sanden <hej@urre.me>",
+	"contributors": [{
+		"name": "Anders Wiredal",
+		"email": "anders@iamanders.com"
+	}],
 	"engines": {
-	      "node": ">=0.10"
+		"node": ">=0.10"
 	},
 	"license": "MIT",
 	"homepage": "https://github.com/urre/browsersverige-cli",
@@ -17,7 +21,8 @@
 		"request": "~2.51.0",
 		"commander": "~2.6.0"
 		},
-	"bin": {
-		"browsersverige": "browsersverige.js"
+		"bin": {
+			"browsersverige": "browsersverige.js"
+		}
 	}
 }
