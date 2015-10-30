@@ -9,17 +9,25 @@ program
 	.version('1.0.2')
 	.usage('[options] <keywords>')
 	.option('-l, --limit <n>', 'Limit results by entering a number 1-18', parseInt)
+	.option('-r --filter <s>', 'Filter browser by entering a string')
 	.option('-f, --full', 'Full output')
 	.parse(process.argv);
 
 	var url = 'http://browsersverige.se/browsers.json';
 	var number;
 	var full = false;
+	var filter = null;
 
+	// Limit
 	if(program.limit) {
 		number = program.limit;
 	} else {
 		full = true;
+	}
+
+	// Filter
+	if(program.filter) {
+		filter = program.filter;
 	}
 
 	request({
@@ -31,13 +39,25 @@ program
 			var body = JSON.parse(body);
 			if(full) {
 				out.write('\n'+chalk.white.bgBlue(" Browsersverige: ")+'\n');
+
 				for(var i = 0; i < body.length; i++) {
-					out.write(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+' %') + "\n");
+					if(body[i]) {
+						if(!filter || (filter && body[i].browser.toLowerCase().indexOf(filter.toLowerCase()) !== -1)) {
+							out.write(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+' %') + "\n");
+						}
+					}
 				}
 			} else {
 				out.write('\n'+chalk.white.bgBlue(" Browsersverige topp "+number+": ")+'\n');
+
 				for(var i = 0; i < number; i++) {
-					out.write(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+' %') + "\n");
+					if(body[i]) {
+						if(!filter || (filter && body[i].browser.toLowerCase().indexOf(filter.toLowerCase()) !== -1)) {
+							out.write(chalk.yellow(body[i].browser) + ': '+ chalk.blue(body[i].market+' %') + "\n");
+						} else {
+							number++; // If missed filter, run loop once more
+						}
+					}
 				}
 			}
 			process.exit(0);
