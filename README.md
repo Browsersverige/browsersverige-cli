@@ -20,6 +20,10 @@ Display only top 3 browsers
 
 	browsersverige -l 3
 
+Filter by vendor, ex show only Internet Explorer
+
+	browsersverige -r explorer
+
 Help?
 
 	browsersverige -h
@@ -33,13 +37,13 @@ Copy to clipboard (for pasting into other applications)
 This is just one way of measuring Browser stats. This is explained [here](http://browsersverige.se/om).
 
 ### Todo
-- [ ] Add argument for filtering by Browser vendor
 - [ ] Add tests
 
 ### Changelog
++ 1.1.0: Added filtering by browser vendor
 + 1.0.1: Added percentage characters in the output
 + 1.0.0: No longer beta
 + 0.0.1: Published
 
 ### License
-Copyright (c) 2014 Urban Sanden. Licensed under the MIT license.
+Copyright (c) 2015 Urban Sanden. Licensed under the MIT license.
